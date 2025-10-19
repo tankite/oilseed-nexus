@@ -8,141 +8,139 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Agricultural green - growth and prosperity */
-    --background: 0 0% 100%;
-    --foreground: 142 30% 15%;
+    /* Swiggy-inspired warm and friendly palette */
+    --background: 40 20% 99%;
+    --foreground: 20 14% 20%;
 
-    /* Card and surfaces */
+    /* Card and surfaces with warmth */
     --card: 0 0% 100%;
-    --card-foreground: 142 30% 15%;
+    --card-foreground: 20 14% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 142 30% 15%;
+    --popover-foreground: 20 14% 20%;
 
-    /* Primary - Deep agricultural green */
-    --primary: 142 71% 35%;
+    /* Primary - Vibrant orange (Swiggy-style) */
+    --primary: 24 95% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 142 71% 45%;
+    --primary-light: 24 95% 65%;
+    --primary-dark: 24 95% 43%;
 
-    /* Secondary - Golden prosperity */
-    --secondary: 45 93% 47%;
-    --secondary-foreground: 142 30% 15%;
+    /* Secondary - Warm coral */
+    --secondary: 14 100% 68%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted earth tones */
-    --muted: 40 20% 96%;
-    --muted-foreground: 142 15% 45%;
+    /* Muted warm tones */
+    --muted: 40 15% 95%;
+    --muted-foreground: 20 8% 46%;
 
-    /* Accent - Technology blue */
-    --accent: 217 91% 60%;
+    /* Accent - Fresh green */
+    --accent: 142 71% 45%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 142 20% 90%;
-    --input: 142 20% 90%;
-    --ring: 142 71% 35%;
-
-    --radius: 0.75rem;
-
-    /* Success - vibrant green for growth indicators */
-    --success: 142 76% 36%;
+    /* Success - Bright green */
+    --success: 142 76% 45%;
     --success-foreground: 0 0% 100%;
 
-    /* Warning - amber for alerts */
-    --warning: 38 92% 50%;
+    /* Warning - Amber */
+    --warning: 38 92% 55%;
     --warning-foreground: 0 0% 100%;
 
-    /* Info - blue for information */
-    --info: 217 91% 60%;
+    /* Info - Sky blue */
+    --info: 199 89% 48%;
     --info-foreground: 0 0% 100%;
 
-    /* Chart colors for data visualization */
-    --chart-1: 142 71% 45%;
-    --chart-2: 45 93% 47%;
-    --chart-3: 217 91% 60%;
-    --chart-4: 38 92% 50%;
-    --chart-5: 281 83% 48%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(142, 71%, 35%), hsl(142, 71%, 45%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45, 93%, 47%), hsl(45, 93%, 57%));
-    --gradient-hero: linear-gradient(135deg, hsl(142, 71%, 35%) 0%, hsl(142, 71%, 25%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(217, 91%, 70%));
+    --border: 40 15% 88%;
+    --input: 40 15% 90%;
+    --ring: 24 95% 53%;
 
-    /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(142 71% 35% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(142 71% 35% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(142 71% 35% / 0.1);
-    --shadow-glow: 0 0 20px hsl(142 71% 45% / 0.3);
+    --radius: 1rem;
+
+    /* Chart colors - vibrant and friendly */
+    --chart-1: 24 95% 53%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 38 92% 55%;
+    --chart-5: 281 83% 55%;
+
+    /* Gradients - warm and inviting */
+    --gradient-primary: linear-gradient(135deg, hsl(24, 95%, 53%), hsl(14, 100%, 68%));
+    --gradient-secondary: linear-gradient(135deg, hsl(14, 100%, 68%), hsl(24, 95%, 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(24, 95%, 53%) 0%, hsl(24, 95%, 43%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(142, 71%, 45%), hsl(142, 76%, 55%));
+    --gradient-warm: linear-gradient(180deg, hsl(24, 100%, 97%), hsl(40, 20%, 99%));
+
+    /* Shadows - soft and friendly */
+    --shadow-sm: 0 2px 4px hsl(24 95% 53% / 0.08);
+    --shadow-md: 0 4px 12px hsl(24 95% 53% / 0.12);
+    --shadow-lg: 0 8px 24px hsl(24 95% 53% / 0.16);
+    --shadow-card: 0 2px 8px hsl(20 14% 20% / 0.06);
 
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --sidebar-background: 142 15% 97%;
-    --sidebar-foreground: 142 30% 25%;
-    --sidebar-primary: 142 71% 35%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 20 14% 20%;
+    --sidebar-primary: 24 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 142 20% 92%;
-    --sidebar-accent-foreground: 142 71% 35%;
-    --sidebar-border: 142 20% 88%;
-    --sidebar-ring: 142 71% 35%;
+    --sidebar-accent: 40 15% 95%;
+    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-border: 40 15% 88%;
+    --sidebar-ring: 24 95% 53%;
   }
 
   .dark {
-    --background: 142 30% 8%;
-    --foreground: 142 15% 95%;
+    --background: 20 14% 12%;
+    --foreground: 40 20% 95%;
 
-    --card: 142 30% 10%;
-    --card-foreground: 142 15% 95%;
+    --card: 20 14% 15%;
+    --card-foreground: 40 20% 95%;
 
-    --popover: 142 30% 10%;
-    --popover-foreground: 142 15% 95%;
+    --popover: 20 14% 15%;
+    --popover-foreground: 40 20% 95%;
 
-    --primary: 142 71% 45%;
+    --primary: 24 95% 53%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 142 71% 55%;
+    --primary-light: 24 95% 65%;
+    --primary-dark: 24 95% 43%;
 
-    --secondary: 45 93% 47%;
-    --secondary-foreground: 142 30% 10%;
+    --secondary: 14 100% 68%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 142 20% 15%;
-    --muted-foreground: 142 15% 65%;
+    --muted: 20 14% 20%;
+    --muted-foreground: 40 15% 65%;
 
-    --accent: 217 91% 60%;
+    --accent: 142 71% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 142 20% 20%;
-    --input: 142 20% 20%;
-    --ring: 142 71% 45%;
+    --border: 20 14% 22%;
+    --input: 20 14% 22%;
+    --ring: 24 95% 53%;
 
-    --success: 142 76% 40%;
-    --success-foreground: 0 0% 100%;
+    --success: 142 76% 45%;
+    --warning: 38 92% 55%;
+    --info: 199 89% 48%;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 100%;
+    --chart-1: 24 95% 53%;
+    --chart-2: 142 71% 45%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 38 92% 55%;
+    --chart-5: 281 83% 55%;
 
-    --info: 217 91% 60%;
-    --info-foreground: 0 0% 100%;
-
-    --chart-1: 142 71% 45%;
-    --chart-2: 45 93% 47%;
-    --chart-3: 217 91% 60%;
-    --chart-4: 38 92% 50%;
-    --chart-5: 281 83% 48%;
-
-    --sidebar-background: 142 30% 10%;
-    --sidebar-foreground: 142 15% 90%;
-    --sidebar-primary: 142 71% 45%;
+    --sidebar-background: 20 14% 15%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 24 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 142 20% 15%;
-    --sidebar-accent-foreground: 142 71% 45%;
-    --sidebar-border: 142 20% 18%;
-    --sidebar-ring: 142 71% 45%;
+    --sidebar-accent: 20 14% 20%;
+    --sidebar-accent-foreground: 24 95% 53%;
+    --sidebar-border: 20 14% 22%;
+    --sidebar-ring: 24 95% 53%;
   }
 }
 
